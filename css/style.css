@@ -273,11 +273,11 @@ html {
    padding: 0 var(--s1);
 }
 .my-service-section-title {
-   color: #fff;
-   font-size: var(--s4);
+   color: var(--Gray-25, #12f7d6);
+   font-size: 48px;
    letter-spacing: -0.04em;
    text-align: center;
-   font-family: 'Ubuntu', sans-serif;
+   font-family: 'IBM Plex Mono', monospace;
    font-weight: 600;
    font-style: normal;
 }
@@ -313,6 +313,21 @@ html {
    box-shadow: 0 7px 20px rgba(100, 28, 2, 0.135);
    position: relative;
    z-index: 1;
+   list-style-type: none;
+   transition: ease 0.5s;
+}
+
+.my-service-item:hover{
+   list-style-type: none;
+   background: linear-gradient(116deg, #ff8660 16.41%, #9a33ff 84.85%), #161513;
+   box-shadow: 0 7px 20px rgba(100, 28, 2, 0.135);
+   transition: ease 0.5s;
+   z-index: 2;
+   transform: scale(1.1);
+}
+
+.my-service-item h3:hover, .my-service-item p:hover {
+   color: var(--white, #ffffff);
 }
 
 .my-service-item h3 {
@@ -320,7 +335,11 @@ html {
    font-size: var(--s1);
    letter-spacing: -0.04em;
    line-height: 1.2;
+   font-family: 'IBM Plex Mono', monospace;
+   font-weight: 600;
+   font-style: normal;
 }
+
 .my-service-item:after {
    content: '';
    display: block;
@@ -340,8 +359,10 @@ html {
 
 .my-service-item p {
    margin-top: var(--s-1);
-   font-weight: 400;
    padding: 0.5rem;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 400;
+   font-style: normal;
    color: hsla(var(--color-brand-primary-h), var(--color-brand-primary-s), var(--color-brand-primary-l), 0.65);
 }
 
@@ -541,7 +562,7 @@ html {
    font-family: 'Ubuntu', sans-serif;
    font-weight: 400;
    font-style: normal;
-   font-size: 16px;
+   font-size: 1.2rem;
    line-height: 24px;
 }
 .company-description {
@@ -993,7 +1014,16 @@ html {
       grid-template-columns: auto; /* Change to single column layout */
       justify-content: center; /* Center items */
    }
-
+   
+   .my-service-item:hover{
+      list-style-type: none;
+      background: linear-gradient(116deg, #ff8660 16.41%, #9a33ff 84.85%), #161513;
+      box-shadow: 0 7px 20px rgba(100, 28, 2, 0.135);
+      transition: ease 0.5s;
+      z-index: 2;
+      transform: scale(1.1);
+   }
+   
    .flow-line-section {
       display: none;
    }
@@ -1073,6 +1103,16 @@ html {
    .my-services-container {
       grid-template-columns: repeat(2, 1fr); /* Two columns */
    }
+
+   .my-service-item:hover{
+      list-style-type: none;
+      background: linear-gradient(116deg, #ff8660 16.41%, #9a33ff 84.85%), #161513;
+      box-shadow: 0 7px 20px rgba(100, 28, 2, 0.135);
+      transition: ease 0.5s;
+      z-index: 2;
+      transform: scale(1.1);
+   }
+
    .tech-container {
       display: flex;
       flex-direction: column;
@@ -1097,9 +1137,7 @@ html {
       align-items: center;
       gap: 1rem;
    }
-   .my-services-container {
-      grid-template-columns: repeat(2, 1fr); /* Three columns */
-   }
+
    .para,
    .title {
       width: 67vw;
@@ -1131,6 +1169,19 @@ html {
 
    .flow-line-section {
       display: none;
+   }
+
+   .my-services-container {
+      grid-template-columns: repeat(2, 1fr); /* Three columns */
+   }
+
+   .my-service-item:hover{
+      list-style-type: none;
+      background: linear-gradient(116deg, #ff8660 16.41%, #9a33ff 84.85%), #161513;
+      box-shadow: 0 7px 20px rgba(100, 28, 2, 0.135);
+      transition: ease 0.5s;
+      z-index: 2;
+      transform: scale(1.1);
    }
 
    .my-work-section {
