@@ -1,27 +1,16 @@
 :root {
-   --color-brand-primary: hsl(var(--color-brand-primary-h), 43%, 43%);
-   --color-brand-primary-h: 251;
-   --color-brand-primary-s: 43%;
-   --color-brand-primary-l: 43%;
-   --color-brand-accent: hsl(var(--color-brand-accent-h), 96%, 61%);
-   --color-brand-accent-h: 16;
-   --color-brand-accent-s: 96%;
-   --color-brand-accent-l: 61%;
-   --color-brand-accent-bg: hsl(calc(var(--color-brand-accent-h) + 17), 100%, 96%);
+   --brand-1: #12f7d6;
+   --Gray-25: #fcfcfd;
+   --white: #ffffff;
+   --gray-800: #1d2939;
+   --brand-background: #0d1b2a;
+   --light-orange: rgba(255, 134, 96, 1);
+   --light-purpule: rgba(128, 0, 255, 1);
+   --color-brand-primary: hsl(251, 43%, 43%);
    --ratio: 1.4;
-   --s-6: calc(var(--s-5) / var(--ratio));
-   --s-5: calc(var(--s-4) / var(--ratio));
-   --s-4: calc(var(--s-3) / var(--ratio));
-   --s-3: calc(var(--s-2) / var(--ratio));
-   --s-2: calc(var(--s-1) / var(--ratio));
-   --s-1: calc(var(--s0) / var(--ratio));
    --s0: calc(1.05rem + 0.333vw);
    --s1: calc(var(--s0) * var(--ratio));
    --s2: calc(var(--s1) * var(--ratio));
-   --s3: calc(var(--s2) * var(--ratio));
-   --s4: calc(var(--s3) * var(--ratio));
-   --s5: calc(var(--s4) * var(--ratio));
-   --s6: calc(var(--s5) * var(--ratio));
 }
 
 a,
@@ -53,14 +42,14 @@ html {
 }
 
 .container {
-   background: #0d1b2a;
+   background: var(--brand-background);
    height: auto;
    width: 100%;
 }
 
 .main-navigation {
    width: 100%;
-   background: #0d1b2a;
+   background: var(--brand-background);
 
    display: flex;
    justify-content: space-between;
@@ -82,7 +71,7 @@ html {
 }
 
 .logo-greeting {
-   color: var(--brand-1, #12f7d6);
+   color: var(--brand-1);
    text-align: left;
    font-family: 'IBM Plex Mono', monospace;
    font-weight: 500;
@@ -93,7 +82,7 @@ html {
 }
 
 .logo-name {
-   color: var(--white, #ffffff);
+   color: var(--white);
    text-align: left;
    font-family: 'IbmPlexMono-Medium', sans-serif;
    font-size: 24px;
@@ -109,16 +98,16 @@ html {
    font-size: 18px;
    align-items: center;
    justify-content: center;
-   color: var(--white, #ffffff);
+   color: var(--white);
 }
 
 .link-item {
    text-align: center;
-   color: var(--white, #ffffff);
+   color: var(--white);
 }
 
 .active {
-   color: var(--brand-1, #12f7d6);
+   color:  var(--brand-1);
 }
 
 .hero {
@@ -165,7 +154,7 @@ html {
 
 .text {
    padding: 0px 16px 0px 16px;
-   color: var(--white, #ffffff);
+   color: var(--white);
    text-align: left;
    font-family: 'Ubuntu', sans-serif;
    font-weight: 500;
@@ -175,7 +164,7 @@ html {
 
 .para-text {
    padding: 0px 16px 0px 16px;
-   color: var(--white, #ffffff);
+   color: var(--white);
    text-align: left;
    font-family: 'Ubuntu', sans-serif;
    font-weight: 400;
@@ -185,7 +174,7 @@ html {
 }
 
 .name {
-   color: var(--brand-1, #12f7d6);
+   color: var(--brand-1);
 }
 
 .right-hero-section {
@@ -212,7 +201,7 @@ html {
    justify-content: center;
 }
 .avatar {
-   background: linear-gradient(137.6deg, rgba(255, 134, 96, 1) 0%, rgba(128, 0, 255, 1) 100%);
+   background: linear-gradient(137.6deg, var(--light-orange) 0%, var(--light-purpule) 100%);
    border-radius: 50%;
 }
 
@@ -229,7 +218,7 @@ html {
    justify-content: flex-start;
    text-align: center;
    font-size: 20px;
-   color: var(--brand-1, #12f7d6);
+   color:  var(--brand-1);
    font-family: 'Ubuntu', sans-serif;
    font-weight: 500;
    font-style: normal;
@@ -249,7 +238,7 @@ html {
 }
 
 .action-button-common {
-   color: var(--white, #ffffff);
+   color: var(--white);
    border-radius: 50px;
    padding: 1.2rem 3rem;
    width: max-content;
@@ -261,11 +250,11 @@ html {
 }
 
 .get-in-touch-button {
-   background: linear-gradient(116deg, #ff8660 16.41%, #9a33ff 84.85%), #161513;
+   background: linear-gradient(116deg, var(--light-orange) 16.41%, var(--light-purpule)  84.85%), #161513;
 }
 
 .download-cv-button {
-   border: 1px solid rgba(255, 134, 96, 1);
+   border: 1px solid var(--light-orange);
    background: transparent;
 }
 /* My services Section */
@@ -273,9 +262,9 @@ html {
    padding: 0 var(--s1);
 }
 .my-service-section-title {
-   color: var(--Gray-25, #12f7d6);
+   color: var(--brand-1);
    font-size: 48px;
-   letter-spacing: -0.04em;
+   letter-spacing: 0.4rem;
    text-align: center;
    font-family: 'IBM Plex Mono', monospace;
    font-weight: 600;
@@ -294,7 +283,7 @@ html {
    text-align: center;
    font-size: 1.2rem;
    line-height: 1.5em;
-   color: var(--white, #ffffff);
+   color: var(--white);
 }
 
 .my-services-container {
@@ -307,7 +296,7 @@ html {
    justify-content: space-evenly;
 }
 .my-service-item {
-   background: #fff;
+   background: var(--white);
    padding: calc(var(--s2) - 0.6rem) var(--s1);
    border-radius: 25px;
    box-shadow: 0 7px 20px rgba(100, 28, 2, 0.135);
@@ -324,16 +313,17 @@ html {
    transition: ease 0.5s;
    z-index: 2;
    transform: scale(1.1);
+   color: var(--white);
 }
 
-.my-service-item h3:hover, .my-service-item p:hover {
-   color: var(--white, #ffffff);
+.my-service-item:hover * {
+   color: var(--white);
 }
 
 .my-service-item h3 {
    color: var(--color-brand-primary);
    font-size: var(--s1);
-   letter-spacing: -0.04em;
+   letter-spacing: 0.1rem;
    line-height: 1.2;
    font-family: 'IBM Plex Mono', monospace;
    font-weight: 600;
@@ -350,7 +340,7 @@ html {
    height: 50px;
    border-radius: 25px 0;
    cursor: pointer;
-   background-color: var(--brand-1, #12f7d6);
+   background-color:  var(--brand-1);
    background-size: 20px 20px;
    background-repeat: no-repeat;
    background-position: center;
@@ -358,16 +348,16 @@ html {
 }
 
 .my-service-item p {
-   margin-top: var(--s-1);
-   padding: 0.5rem;
+   margin-top: 1rem;
    font-family: 'Ubuntu', sans-serif;
    font-weight: 400;
    font-style: normal;
-   color: hsla(var(--color-brand-primary-h), var(--color-brand-primary-s), var(--color-brand-primary-l), 0.65);
+   color: hsla(251, 43%, 43%, 0.65);
+   font-size: 1.2rem;
 }
 
 .my-text {
-   color: var(--Gray-25, #fcfcfd);
+   color: var(--Gray-25);
    font-size: 48px;
    font-family: 'IBM Plex Mono', monospace;
    font-weight: 600;
@@ -377,7 +367,7 @@ html {
 }
 
 .services-text {
-   color: var(--Gray-25, #12f7d6);
+   color: var(--brand-1);
    font-size: 48px;
    font-family: 'IBM Plex Mono', monospace;
    font-weight: 600;
@@ -387,7 +377,7 @@ html {
 }
 
 .my-work-experience {
-   background: #0d1b2a;
+   background: var(--brand-background);
    height: auto;
    display: flex;
    flex-direction: column;
@@ -478,7 +468,7 @@ html {
    background: #ffffff;
    border-radius: 48px;
    border-style: dashed;
-   border-color: var(--gray-800, #1d2939);
+   border-color: var(--gray-800);
    border-width: 2px;
    display: flex;
    flex-direction: row;
@@ -503,7 +493,7 @@ html {
    background: #ffffff;
    border-radius: 48px;
    border-style: dashed;
-   border-color: var(--gray-800, #1d2939);
+   border-color: var(--gray-800);
    border-width: 2px;
    display: flex;
    flex-direction: row;
@@ -517,7 +507,7 @@ html {
    overflow: hidden;
 }
 .ellipse-32 {
-   background: var(--gray-800, #1d2939);
+   background: var(--gray-800);
    border-radius: 50%;
    /* flex-shrink */
    width: 36px;
@@ -528,7 +518,7 @@ html {
    background: #ffffff;
    border-radius: 48px;
    border-style: dashed;
-   border-color: var(--gray-800, #1d2939);
+   border-color: var(--gray-800);
    border-width: 2px;
    display: flex;
    flex-direction: row;
@@ -577,9 +567,8 @@ html {
 }
 
 .bottom-container {
-   background: #0d1b2a;
-   /* padding: 96px 104px 96px 104px; */
-   padding: 1rem;
+   background: var(--brand-background);
+   padding: 4rem;
    display: flex;
    flex-direction: column;
    gap: 46px;
@@ -594,6 +583,7 @@ html {
    font-family: 'IBM Plex Mono', monospace;
    font-weight: 700;
    font-style: normal;
+   letter-spacing: 0.4rem;
 }
 .tech-container {
    display: flex;
@@ -805,17 +795,6 @@ html {
    justify-content: center;
    flex-wrap: wrap;
 }
-.skill-icons-wordpress {
-   width: 70px;
-   height: 70px;
-   overflow: hidden;
-}
-.logos-figma {
-   width: 46.67px;
-   height: 70px;
-   position: relative;
-   overflow: visible;
-}
 .devicon-canva {
    width: 70px;
    height: 70px;
@@ -823,7 +802,7 @@ html {
    overflow: hidden;
 }
 .contact-me-section {
-   background: #0d1b2a;
+   background: var(--brand-background);
    padding: 0px 0px 48px 0px;
    display: flex;
    flex-direction: column;
@@ -891,7 +870,7 @@ html {
    color: #000000;
    text-align: center;
    font-family: 'Poppins-Medium', sans-serif;
-   font-size: 16px;
+   font-size: 1.3rem;
    font-weight: 500;
    position: relative;
 }
@@ -943,7 +922,7 @@ html {
    height: 0px;
 }
 .copyright-text {
-   color: #354659;
+   color: #bcbcbc;
    text-align: left;
    font-family: 'Ubuntu-Regular', sans-serif;
    font-size: 16px;
@@ -952,181 +931,6 @@ html {
    display: flex;
    align-items: center;
    justify-content: flex-start;
-}
-
-/* Small devices (phones, 576px and up) */
-@media screen and (max-width: 576px) {
-   .main-navigation {
-      padding: 2rem 2rem; /* Adjust padding */
-   }
-
-   .hero {
-      flex-direction: column; /* Adjust layout of hero section */
-      gap: 20px; /* Adjust gap between elements */
-      padding: 3rem; /* Adjust padding */
-      align-items: center;
-      justify-content: center;
-   }
-
-   .nav-items {
-      margin: 1rem 0;
-      flex-direction: column;
-      gap: 24px; /* Adjust gap between navigation items */
-   }
-
-   .logo {
-      gap: 10px; /* Adjust gap between logo elements */
-   }
-
-   .logo-greeting,
-   .logo-name {
-      font-size: 18px; /* Decrease font size for logo */
-      line-height: 28px; /* Adjust line height for logo */
-   }
-   .para,
-   .title {
-      width: 67vw;
-   }
-
-   .para-p-element,
-   .text,
-   .para-text {
-      text-align: center;
-   }
-
-   .left-hero-section,
-   .right-hero-section {
-      gap: 20px; /* Adjust gap between elements */
-      justify-content: center;
-      align-items: center;
-   }
-
-   .developer-details {
-      justify-content: center;
-      align-items: center;
-   }
-
-   .my-service-section {
-      padding: 0 1rem; /* Adjust padding */
-   }
-
-   .my-services-container {
-      grid-template-columns: auto; /* Change to single column layout */
-      justify-content: center; /* Center items */
-   }
-   
-   .my-service-item:hover{
-      list-style-type: none;
-      background: linear-gradient(116deg, #ff8660 16.41%, #9a33ff 84.85%), #161513;
-      box-shadow: 0 7px 20px rgba(100, 28, 2, 0.135);
-      transition: ease 0.5s;
-      z-index: 2;
-      transform: scale(1.1);
-   }
-   
-   .flow-line-section {
-      display: none;
-   }
-
-   .tech-container {
-      display: flex;
-      flex-direction: column;
-      gap: 46px;
-      align-items: flex-start;
-      justify-content: center;
-   }
-   .copyright-text {
-      text-align: center;
-   }
-   .rating-overview-container {
-      display: flex;
-      flex-direction: column;
-   }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media screen and (max-width: 768px) {
-   .container {
-      width: 100%;
-   }
-
-   .main-navigation {
-      flex-direction: column;
-   }
-
-   .hero {
-      flex-direction: column; /* Adjust layout of hero section */
-      gap: 20px; /* Adjust gap between elements */
-      padding: 3rem; /* Adjust padding */
-      align-items: center;
-      justify-content: center;
-   }
-
-   .left-hero-section,
-   .right-hero-section {
-      gap: 20px; /* Adjust gap between elements */
-      justify-content: center;
-      align-items: center;
-   }
-   .para,
-   .title {
-      width: 67vw;
-   }
-   .flow-line-section {
-      display: none;
-   }
-   .developer-details {
-      justify-content: center;
-      align-items: center;
-   }
-
-   .title-h1-element {
-      text-align: center;
-      font-size: 1.5rem;
-   }
-
-   .para-p-element,
-   .text,
-   .para-text {
-      text-align: center;
-   }
-
-   .para-text {
-      font-size: 14px; /* Decrease font size for paragraph text */
-      line-height: 24px; /* Adjust line height for paragraph text */
-   }
-
-   .my-service-section-text {
-      text-align: center; /* Align text left on larger screens */
-   }
-
-   .my-services-container {
-      grid-template-columns: repeat(2, 1fr); /* Two columns */
-   }
-
-   .my-service-item:hover{
-      list-style-type: none;
-      background: linear-gradient(116deg, #ff8660 16.41%, #9a33ff 84.85%), #161513;
-      box-shadow: 0 7px 20px rgba(100, 28, 2, 0.135);
-      transition: ease 0.5s;
-      z-index: 2;
-      transform: scale(1.1);
-   }
-
-   .tech-container {
-      display: flex;
-      flex-direction: column;
-      gap: 46px;
-      align-items: flex-start;
-      justify-content: center;
-   }
-   .copyright-text {
-      text-align: center;
-   }
-   .rating-overview-container {
-      display: flex;
-      flex-direction: column;
-   }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -1199,6 +1003,7 @@ html {
       align-items: center;
       justify-content: center;
    }
+
    .copyright-text {
       text-align: center;
    }
@@ -1216,5 +1021,209 @@ html {
    .rating-overview-container {
       display: flex;
       flex-direction: column;
+   }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+   .container {
+      width: 100%;
+   }
+
+   .main-navigation {
+      flex-direction: column;
+   }
+
+   .hero {
+      flex-direction: column; /* Adjust layout of hero section */
+      gap: 20px; /* Adjust gap between elements */
+      padding: 3rem; /* Adjust padding */
+      align-items: center;
+      justify-content: center;
+   }
+
+   .left-hero-section,
+   .right-hero-section {
+      gap: 20px; /* Adjust gap between elements */
+      justify-content: center;
+      align-items: center;
+   }
+   .para,
+   .title {
+      width: 67vw;
+   }
+   .flow-line-section {
+      display: none;
+   }
+   .developer-details {
+      justify-content: center;
+      align-items: center;
+   }
+
+   .title-h1-element {
+      text-align: center;
+      font-size: 1.5rem;
+   }
+
+   .para-p-element,
+   .text,
+   .para-text {
+      text-align: center;
+   }
+
+   .para-text {
+      font-size: 14px; /* Decrease font size for paragraph text */
+      line-height: 24px; /* Adjust line height for paragraph text */
+   }
+
+   .my-service-section-text {
+      text-align: center; /* Align text left on larger screens */
+   }
+
+   .my-services-container {
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+   }
+
+   .my-service-item:hover{
+      list-style-type: none;
+      background: linear-gradient(116deg, #ff8660 16.41%, #9a33ff 84.85%), #161513;
+      box-shadow: 0 7px 20px rgba(100, 28, 2, 0.135);
+      transition: ease 0.5s;
+      z-index: 2;
+      transform: scale(1.1);
+   }
+   .contact-me-text {
+      font-size: 5vw;
+   }
+   .tech-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 46px;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .copyright-text {
+      text-align: center;
+   }
+   .rating-overview-container {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+
+
+/* Small devices (phones, 576px and up) */
+@media screen and (max-width: 576px) {
+   .main-navigation {
+      padding: 2rem 2rem; /* Adjust padding */
+   }
+
+   .hero {
+      flex-direction: column; /* Adjust layout of hero section */
+      gap: 20px; /* Adjust gap between elements */
+      padding: 3rem; /* Adjust padding */
+      align-items: center;
+      justify-content: center;
+   }
+
+   .nav-items {
+      margin: 1rem 0;
+      flex-direction: column;
+      gap: 24px; /* Adjust gap between navigation items */
+   }
+
+   .logo {
+      gap: 10px; /* Adjust gap between logo elements */
+   }
+
+   .logo-greeting,
+   .logo-name {
+      font-size: 18px; /* Decrease font size for logo */
+      line-height: 28px; /* Adjust line height for logo */
+   }
+   .para,
+   .title {
+      width: 67vw;
+   }
+
+   .para-p-element,
+   .text,
+   .para-text {
+      text-align: center;
+   }
+
+   .left-hero-section,
+   .right-hero-section {
+      gap: 20px; /* Adjust gap between elements */
+      justify-content: center;
+      align-items: center;
+   }
+
+   .developer-details {
+      justify-content: center;
+      align-items: center;
+   }
+
+   .my-service-section {
+      padding: 0 1rem; /* Adjust padding */
+   }
+
+   .my-services-container {
+      grid-template-columns: repeat(1, 2fr);; /* Change to single column layout */
+      justify-content: center; /* Center items */
+   }
+   .contact-me-section {
+      width: 90%;
+   }
+
+   .contact-me-text {
+      font-size: 7vw;
+   }
+   
+   .my-service-item h3 {
+      font-size: 2.5rem;
+   }
+
+   .my-service-item p {
+      font-size: 2rem;
+   }
+
+   .my-service-item:hover{
+      list-style-type: none;
+      background: linear-gradient(116deg, #ff8660 16.41%, #9a33ff 84.85%), #161513;
+      box-shadow: 0 7px 20px rgba(100, 28, 2, 0.135);
+      transition: ease 0.5s;
+      z-index: 2;
+      transform: scale(1.1);
+   }
+   
+   .flow-line-section {
+      display: none;
+   }
+
+   .tech-container {
+      display: flex;
+      flex-direction: column;
+      gap: 46px;
+      align-items: center;
+      justify-content: center;
+   }
+   .text-container {
+      width: 100%;
+      height: 70px;
+      font-size: 1.5rem;
+   }
+   .copyright-text {
+      text-align: center;
+   }
+   .rating-overview-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
    }
 }
